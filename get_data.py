@@ -1,5 +1,5 @@
 #!/usr/bin/env python2
-
+# Setup
 from ecmwfapi import ECMWFDataServer
 
 server = ECMWFDataServer()
