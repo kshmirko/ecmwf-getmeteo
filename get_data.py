@@ -4,7 +4,7 @@ from ecmwfapi import ECMWFDataServer
 
 server = ECMWFDataServer()
 
-with file('pro-2007.nc.txt') as f:
+with file('pro-2013.nc.txt') as f:
     dates=f.readline()
     params = {
     	'dataset' : "interim",
@@ -14,13 +14,13 @@ with file('pro-2007.nc.txt') as f:
     	'param'   : "129.128/203.128/131.128/132.128/157.128/138.128/60.128",
     	'step'    : "0",
     	'grid'    : "0.75/0.75",
-    	'time'    : "00/06/12/18",
+    	'time'    : "12/18",
     	'date'    : dates,
     	'type'    : "an",
     	'class'   : "ei",
     	'area'    : "80/100/0/160",
     	'format'  : "netcdf",
-    	'target'  : "excange2007.nc",
+    	'target'  : "excange2013.nc",
     }
 
 
